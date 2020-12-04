@@ -13,3 +13,8 @@ patch /usr/lib/plexmediaserver/Resources/Profiles/Chromecast.xml Chromecast.patc
 * Stop the Plex server.
 * Find the Plex Media Server root path. Edit the `Resources/Profiles/Chromecast.xml` file as described in the previous forum thread.
 * Restart the Plex server.
+
+
+## Docker
+
+Here is a `Dockerfile` based on `linuxserver/plex` image that changes the file appropriately. You can change your docker-compose `image: ghcr.io/linuxserver/plex` field to `build: plex` and create a `plex` directory containing the aforementioned `Dockerfile`.

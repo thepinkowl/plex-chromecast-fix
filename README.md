@@ -5,7 +5,7 @@ Some MKV files, when played on a Chromecast, enable a mode "Surround sound enabl
 ## Running on Linux
 
 ```sh
-./fixChromecast.sh
+patch /usr/lib/plexmediaserver/Resources/Profiles/Chromecast.xml Chromecast.patch
 ```
 
 ## Running on other platforms

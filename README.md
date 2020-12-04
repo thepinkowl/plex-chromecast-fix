@@ -18,3 +18,12 @@ patch /usr/lib/plexmediaserver/Resources/Profiles/Chromecast.xml Chromecast.patc
 ## Docker
 
 Here is a `Dockerfile` based on `linuxserver/plex` image that changes the file appropriately. You can change your docker-compose `image: ghcr.io/linuxserver/plex` field to `build: plex` and create a `plex` directory containing the aforementioned `Dockerfile`.
+
+### Updating plex
+
+Run the following to update the plex base image:
+
+``` shell
+docker-compose build --pull
+docker-compose up -d
+```
